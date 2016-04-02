@@ -1,4 +1,4 @@
-from client import Robot_client
+import Robot_client
 
 __author__ = 'scottumsted'
 import time
