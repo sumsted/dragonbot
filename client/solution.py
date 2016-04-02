@@ -3,7 +3,7 @@ import dragonbot as robot
 robot.robot_debug = False
 
 while True:
-    print("'w'=forward, 's'=backward, 'a'=left, 'd'=right, ")
+    print("\n'w'=forward, 's'=backward, 'a'=left, 'd'=right, ")
     print("space=stop, 'z'=rotate left, 'c'=rotate right, 'q'=quit ")
     c = input("command: ")
     print(c)
@@ -20,8 +20,10 @@ while True:
     elif c == ' ':
         robot.stop(1)
     elif c == 'z':
-        robot.forward(1)
+        robot.left_rot(1)
     elif c == 'c':
-        robot.forward(1)
+        robot.right_rot(1)
+    else:
+        print('unknown command')
 
 print('stop')
