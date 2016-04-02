@@ -1,6 +1,6 @@
 import requests
 
-host = 'http://0.0.0.0:8080'
+host = 'http://192.168.3.2:8080'
 
 
 def g(action, *args):

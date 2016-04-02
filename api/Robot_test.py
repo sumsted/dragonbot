@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-from Robot_client import *
+from client.Robot_client import *
 
 
 class TestRobot(TestCase):

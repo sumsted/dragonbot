@@ -1,6 +1,7 @@
+from client import Robot_client
+
 __author__ = 'scottumsted'
 import time
-import Robot_client
 
 
 robot_debug = True
