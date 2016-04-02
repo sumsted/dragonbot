@@ -49,42 +49,42 @@ def Robot_stop(kargs):
 @get('/Robot_forward/<speed>/<seconds>')
 @handle_padded
 def Robot_forward(kargs):
-    r = {'return_value': robot.forward(int(kargs['speed']), int(kargs['seconds']))}
+    r = {'return_value': robot.forward(int(kargs['speed']), float(kargs['seconds']))}
     return r
 
 
 @get('/Robot_backward/<speed>/<seconds>')
 @handle_padded
 def Robot_backward(kargs):
-    r = {'return_value': robot.backward(int(kargs['speed']), int(kargs['seconds']))}
+    r = {'return_value': robot.backward(int(kargs['speed']), float(kargs['seconds']))}
     return r
 
 
 @get('/Robot_right/<speed>/<seconds>')
 @handle_padded
 def Robot_right(kargs):
-    r = {'return_value': robot.right(int(kargs['speed']), int(kargs['seconds']))}
+    r = {'return_value': robot.right(int(kargs['speed']), float(kargs['seconds']))}
     return r
 
 
 @get('/Robot_left/<speed>/<seconds>')
 @handle_padded
 def Robot_left(kargs):
-    r = {'return_value': robot.left(int(kargs['speed']), int(kargs['seconds']))}
+    r = {'return_value': robot.left(int(kargs['speed']), float(kargs['seconds']))}
     return r
 
 
 @get('/Robot_left_glide/<speed>/<seconds>')
 @handle_padded
 def Robot_left_glide(kargs):
-    r = {'return_value': robot.left_glide(int(kargs['speed']), int(kargs['seconds']))}
+    r = {'return_value': robot.left_glide(int(kargs['speed']), float(kargs['seconds']))}
     return r
 
 
 @get('/Robot_right_glide/<speed>/<seconds>')
 @handle_padded
 def Robot_right_glide(kargs):
-    r = {'return_value': robot.right_glide(int(kargs['speed']), int(kargs['seconds']))}
+    r = {'return_value': robot.right_glide(int(kargs['speed']), float(kargs['seconds']))}
     return r
 
 

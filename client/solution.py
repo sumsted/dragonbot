@@ -10,19 +10,19 @@ while True:
     if c == 'q':
         break
     elif c == 'w':
-        robot.forward(1)
+        robot.forward()
     elif c == 's':
-        robot.backward(1)
+        robot.backward()
     elif c == 'a':
-        robot.left(1)
+        robot.left()
     elif c == 'd':
-        robot.right(1)
+        robot.right()
     elif c == ' ':
-        robot.stop(1)
+        robot.stop()
     elif c == 'z':
-        robot.left_rot(1)
+        robot.left_rot()
     elif c == 'c':
-        robot.right_rot(1)
+        robot.right_rot()
     else:
         print('unknown command')
 
