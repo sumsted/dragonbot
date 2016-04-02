@@ -43,5 +43,15 @@ class TestRobot(TestCase):
         seconds = None
         self.assertEqual(Robot_left(speed, seconds), None)
 
+    def test_Robot_left_glide(self):
+        speed = None
+        seconds = None
+        self.assertEqual(Robot_left_glide(speed, seconds), None)
+
+    def test_Robot_right_glide(self):
+        speed = None
+        seconds = None
+        self.assertEqual(Robot_right_glide(speed, seconds), None)
+
 if __name__ == '__main__':
     main()

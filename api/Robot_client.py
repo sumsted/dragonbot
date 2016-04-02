@@ -43,5 +43,13 @@ def Robot_left(speed, seconds):
     return g('Robot_left', speed, seconds)['return_value']
 
 
+def Robot_left_glide(speed, seconds):
+    return g('Robot_left_glide', speed, seconds)['return_value']
+
+
+def Robot_right_glide(speed, seconds):
+    return g('Robot_right_glide', speed, seconds)['return_value']
+
+
 if __name__ == '__main__':
     pass
