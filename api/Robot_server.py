@@ -1,7 +1,7 @@
 from bottle import get, route, request, response, run, post
 import Robot
 
-robot = Robot.Robot(0,0)
+robot = Robot.Robot()
 
 def handle_padded(handler):
     def decorator(**kwargs):
