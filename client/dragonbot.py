@@ -41,7 +41,6 @@ def left(duration=0.5):
         Robot_client.Robot_left_glide(robot_speed, seconds)
 
 
-
 def left_rot(duration=0.5):
     print('robot_controller, left_rot, robot_debug =', robot_debug)
     if not robot_debug:
